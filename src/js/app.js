@@ -6,7 +6,10 @@
 
   angular
     .module('lfgApp', [
-      'lfgApp.components.auth'
+      'ui.router',
+      'lfg.config',
+      'lfgApp.components.home',
+      'lfgApp.components.login'
     ]);
 
 })();

@@ -3,6 +3,6 @@
   'use strict';
 
   angular
-    .module('lfgApp.components.auth', []);
+    .module('lfgApp.components.home', []);
 
 })();
