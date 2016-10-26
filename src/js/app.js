@@ -9,7 +9,8 @@
       'ui.router',
       'lfg.config',
       'lfgApp.components.home',
-      'lfgApp.components.login'
+      'lfgApp.components.login',
+      'lfgApp.components.register'
     ]);
 
 })();

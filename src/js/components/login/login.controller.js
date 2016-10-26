@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('lfgApp.components.login', [])
+    .module('lfgApp.components.login')
     .controller('loginController', loginController);
 
   loginController.$inject = ['$scope'];

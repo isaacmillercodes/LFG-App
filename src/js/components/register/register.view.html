@@ -1,0 +1,65 @@
+<form class="form-horizontal" ng-submit="registerCtrl.submit()" name="registerForm">
+  <div class="form-group">
+    <label for="username" class="col-sm-4 control-label">Username</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="username" placeholder="Username" ng-model="registerCtrl.newUser.username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="firstName" class="col-sm-4 control-label">First Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="firstName" placeholder="First Name" ng-model="registerCtrl.newUser.firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-4 control-label">Last Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="lastName" placeholder="Last Name" ng-model="registerCtrl.newUser.lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-4 control-label">Email</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="email" placeholder="Email" ng-model="registerCtrl.newUser.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-sm-4 control-label">Password</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="password" placeholder="Password" ng-model="registerCtrl.newUser.password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="description" class="col-sm-4 control-label">Description</label>
+    <div class="col-sm-4">
+      <textarea class="form-control" rows="3" id="description" placeholder="Tell us a little about yourself." ng-model="registerCtrl.newUser.description"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="avatar" class="col-sm-4 control-label">Avatar URL</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="avatar" placeholder="Enter a valid image URL" ng-model="registerCtrl.newUser.avatar">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="address" class="col-sm-4 control-label">Address</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="address" placeholder="Street Address" ng-model="registerCtrl.newUser.address.street">
+      <br>
+      <input type="text" class="form-control" id="address" placeholder="City" ng-model="registerCtrl.newUser.address.city">
+      <br>
+      <input type="text" class="form-control" id="address" placeholder="Zip Code" ng-model="registerCtrl.newUser.address.zipcode">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="birthday" class="col-sm-4 control-label">Birthday:</label>
+    <div class="col-sm-4">
+      <input type="date" class="form-control" id="birthday" placeholder="mm/dd/yyyy" ng-model="registerCtrl.newUser.dob">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-4">
+      <button type="submit" class="btn btn-default">Register</button>
+    </div>
+  </div>
+</form>

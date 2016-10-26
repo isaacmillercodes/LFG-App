@@ -17,14 +17,17 @@
           templateUrl:'js/components/home/home.view.html'
         })
         .state('login', {
-          templateUrl: 'js/components/home/partials/_login.html',
+          url: '/login',
+          templateUrl: 'js/components/login/login.view.html',
           controller: 'loginController',
           controllerAs: 'loginCtrl'
+        })
+        .state('register', {
+          url: '/register',
+          templateUrl: 'js/components/register/register.view.html',
+          controller: 'registerController',
+          controllerAs: 'registerCtrl'
         });
-        // .state('register', {
-        //   url: '/register',
-        //   templateUrl: 'js/components/register/register.view.html'
-        // });
     }
 
 })();
